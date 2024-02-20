@@ -1,0 +1,130 @@
+.box{
+    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    margin: 50px auto;
+}
+.box-1{
+    background-color: mediumaquamarine;
+}
+.box-2{
+    background-color: mediumpurple;
+    transition: all 2s;
+}
+.box:hover{
+    transform: scale(4);
+}
+
+.container-circle div{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.circle1{
+    background-color: mediumpurple;
+    transition: all 1.5s linear;
+}
+.circle2{
+    background-color: mediumspringgreen;
+    transition: all 1.5s ease;
+}
+.circle3{
+    background-color: lemonchiffon;
+    transition: all 1.5s ease-in;
+}
+.circle4{
+    background-color: lightsalmon;
+    transition: all 1.5s ease-in-out;
+}
+.circle5{
+    background-color: palevioletred;
+    transition: all 1.5s ease-out;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(12.5rem);
+}
+
+.square-uno, .square-dos{
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+}
+.square-uno{
+    background-color: tan;
+
+}
+.square-dos{
+    background-color: saddlebrown;
+    transition: all .8s;
+}
+
+.square-dos:hover{
+    transform: translate(40px, 40px);
+    opacity: 0.2;
+}
+
+.combinado{
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 2s;
+} 
+
+.combinado:hover{
+    transform: rotate(90deg) scale(2) translateX(120px);
+
+    /* prefijos */
+    /* Chrome & Edge */
+    -webkit-transform: rotate(90deg) scale(2) translateX(120px);
+    /* Opera */
+    -o-transform: rotate(90deg) scale(2) translateX(120px);
+    /* Mozilla */
+    -moz-transform: rotate(90deg) scale(2) translateX(120px);
+}
+
+.animaciones{
+    width: 120px;
+    height: 120px;
+    margin: 50px;
+    background-color: yellow;
+}
+
+.animaciones:hover{
+    animation: changeColor 4s;
+}
+ @keyframes changeColor{
+    0%{
+        background-color: lightyellow;
+    }
+    15%{
+        background-color: tomato;
+        border-radius: 30px;
+    }
+    20%{
+        width: 50%;
+    }
+    30%{
+        background-color: rgb(224, 57, 28);
+        border-radius: 60px;
+    }
+    40%{
+        width: 30%;
+    }
+    45%{
+        background-color: rgb(161, 26, 26);
+        border-radius: 30px;
+    }
+    100%{
+        background-color: rgb(110, 6, 6);
+    }
+ }
